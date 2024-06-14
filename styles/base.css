@@ -143,7 +143,8 @@ figure, figcaption{
     border-top-right-radius: 15px;
     min-width: 500px;
     min-height: 725px;
-    text-align: center;
+    /* text-align: center; */
+    position: relative;
 }
 
 .web-dev-resources-title{
@@ -153,10 +154,13 @@ figure, figcaption{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     padding: .3rem;
+    text-align: center;
 }
 
 .list{
-    align-self: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 /* Footer */
