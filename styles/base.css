@@ -111,6 +111,7 @@ main {
     grid-template-columns: 300px 1fr;
     padding: 1rem;
     padding-top: 0;
+    margin-left: .7rem;
 }
 
 figure, figcaption{
@@ -127,7 +128,6 @@ figure, figcaption{
 }
 
 .card-resources-web-dev-resources{
-    font-size: 20px;
     border: 1px solid rgb(141, 141, 141);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -142,7 +142,7 @@ figure, figcaption{
     margin-top: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    padding: .3rem;
+    padding: .5rem;
     text-align: center;
 }
 
@@ -152,6 +152,7 @@ figure, figcaption{
     transform: translate(0, -50%);
     margin-left: 25px;
     font-size: 25px;
+    list-style-type: square;
 }
 
 /* Footer */
@@ -166,3 +167,7 @@ footer{
     padding: .5px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}

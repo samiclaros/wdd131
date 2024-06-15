@@ -7,6 +7,7 @@
         <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Samuel Alejandro Claros Garcia - This is the home page, worked by me for the WDD131 BYU Idaho Course">
         <meta name="author" content="Samuel Alejandro Claros Garcia BYU-Idaho WDD 130 course home page">
         <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/getdate.js" defer></script>
     </head>
     <body>
         <header>
@@ -20,7 +21,7 @@
         </header>
         <main>
                 <section class="card">
-                    <h1 class="about-me">About Me</h1>
+                    <h2 class="about-me">About Me</h2>
                     <div class="upper-card">
                         <p class="about-me-text">Hello! My name is Samuel Alejandro Claros Garcia and I'm from Cochabamba, Bolivia. I enjoy playing videogames and going on a ride on my bike.
                             I love to play videogames, specifically I'm in love with Rocket League.
@@ -43,19 +44,19 @@
                     </div>
                 </section>
                 <section class="card-resources-web-dev-resources">
-                    <h1 class="web-dev-resources-title">Web Dev Resources</h1>
+                    <h2 class="web-dev-resources-title">Web Dev Resources</h2>
                     <ul class="list">
                         <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
                         <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
                         <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
                         <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
-                        <li><a href="https://www.udemy.com/?id=[[timestamp]]" target="_blank">Udemy</a></li>
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
                     </ul>
                 </section>
         </main>
         <footer>
-            <p>©️<span id="currentyear">2024</span> 🕹️🤪Samuel Alejandro Claros Garcia🤪🕹️ Cochabamba</p>
-            <p class="lastModified">Last Modification</p>
+            <p>©️ <span id="currentyear"></span> 🕹️🤪Samuel Alejandro Claros Garcia🤪🕹️ Cochabamba</p> 
+            <p id="lastModified"></p>
         </footer>  
     </body>
     
