@@ -35,7 +35,7 @@ header, main, footer {
     text-align: center;
 }
 
-.top-menu{
+nav{
     font-size: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -44,14 +44,23 @@ header, main, footer {
     padding: 10px;
 }
 
+nav a{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .nav{
     color: white;
     text-decoration: none;
 
 }
 
-.nav:hover{
-    color: rgba(32, 54, 100, 0.651);
+nav a:hover{
+    color: var(--primary-color);
+    background-color: rgba(32, 54, 100, 0.651);
+    /* width: 50%; */
 }
 
 main {
