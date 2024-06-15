@@ -41,7 +41,6 @@ nav{
     justify-content: space-evenly;
     background-color: rgba(32, 54, 100, 0.788);
     color: var(--primary-color);
-    padding: 10px;
 }
 
 nav a{
