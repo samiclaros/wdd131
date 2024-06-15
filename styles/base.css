@@ -39,20 +39,19 @@ header, main, footer {
     font-size: 25px;
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(32, 54, 100, 0.651);
+    background-color: rgba(32, 54, 100, 0.788);
     color: var(--primary-color);
     padding: 10px;
 }
 
-.top-nav{
+.nav{
     color: white;
     text-decoration: none;
 
 }
 
-.top-nav:hover{
-    color: black;
-    opacity: 50%;
+.nav:hover{
+    color: rgba(32, 54, 100, 0.651);
 }
 
 main {
