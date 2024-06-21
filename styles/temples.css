@@ -4,7 +4,6 @@ body {
 }
 
 header{
-    display: block;
     background-color: rgba(13, 104, 156, 0.993);
 }
 
@@ -30,8 +29,8 @@ nav{
 	background: none;
 	color: #000;
  	position: absolute; /* Changes here */
-    right: 20px; /* Changes here */
-    top: 10px;
+    left: 410px;
+    top: -15px;
 }
 
 #menu::before {
@@ -57,7 +56,8 @@ nav{
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+	display: flex;
+    flex-direction: column;
 }
 
 .active::before {
@@ -89,7 +89,7 @@ div{
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 1800px;
+    max-width: 100%;
     justify-items: center;
 }
 
