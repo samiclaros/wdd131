@@ -5,22 +5,15 @@ body {
 
 header{
     background-color: rgba(13, 104, 156, 0.993);
+    display: block;
 }
 
 h1{
     color: white;
     text-align: center;
     align-self: center;
-    margin: 10px;
-    max-width: 100%;
-}
-
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 22px;
-    margin-right: 120px;
-    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #menu {
@@ -29,13 +22,13 @@ nav{
 	background: none;
 	color: #000;
  	position: absolute; /* Changes here */
-    left: 410px;
-    top: -15px;
+    left: 320px;
+    top: -30px;
 }
 
 #menu::before {
 	content: "☰";
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 #menu.open::before {
@@ -47,6 +40,7 @@ nav{
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+    /* padding: 1rem; */
 }
 
 .navigation a:hover {
@@ -55,20 +49,16 @@ nav{
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
+nav.open a {
 	display: flex;
     flex-direction: column;
-}
-
-.active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
 a{
     color: white;
     text-decoration: none;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 nav a:hover{
@@ -78,19 +68,20 @@ nav a:hover{
 
 /* BODY */
 
+main{
+    margin: 1rem auto;
+    display: block;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    justify-items: center;
+}
+
 h2{
     text-align: center;
     color:  rgba(13, 104, 156, 0.993);
     margin: 2rem;
     font-size: 30px;
-}
-
-div{
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    justify-items: center;
+    grid-column: 1/-1;
 }
 
 img{
