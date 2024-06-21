@@ -3,72 +3,80 @@ body {
     margin: 0 auto;
 }
 
-header{
+header {
     background-color: rgba(13, 104, 156, 0.993);
-    display: block;
+    position: relative;
 }
 
-h1{
+h1 {
     color: white;
-    text-align: center;
+    padding-left: 2.5rem;
     align-self: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #000;
- 	position: absolute; /* Changes here */
-    left: 320px;
-    top: -30px;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    /* Changes here */
+    right: 20px;
+    top: 0;
+    padding: 0 0 30px 0;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
     color: rgb(255, 255, 255);
 }
 
 #menu.open::before {
-	content: "X";
+    content: "X";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navigation a {
-	display: none;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
     /* padding: 1rem; */
 }
 
 .navigation a:hover {
-	color: rgba(13, 104, 156, 0.993);
+    color: rgba(13, 104, 156, 0.993);
     background-color: white;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 nav.open a {
-	display: flex;
+    display: flex;
     flex-direction: column;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
 }
 
-nav a:hover{
+nav a:hover {
     color: rgba(13, 104, 156, 0.993);
     background-color: white;
 }
 
 /* BODY */
 
-main{
+main {
     margin: 1rem auto;
     display: block;
     grid-template-columns: 1fr;
@@ -76,26 +84,26 @@ main{
     justify-items: center;
 }
 
-h2{
+h2 {
     text-align: center;
-    color:  rgba(13, 104, 156, 0.993);
+    color: rgba(13, 104, 156, 0.993);
     margin: 2rem;
     font-size: 30px;
     grid-column: 1/-1;
 }
 
-img{
+img {
     border-radius: 10px;
     max-width: 100%;
 }
 
-figcaption{
+figcaption {
     text-align: center;
     font-size: 20px;
     margin-top: 1rem;
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 18px;
     background-color: rgba(13, 104, 156, 0.993);
