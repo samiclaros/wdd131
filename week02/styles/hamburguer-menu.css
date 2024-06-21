@@ -32,7 +32,6 @@ nav {
  	position: absolute; /* Changes here */
     right: 20px; /* Changes here */
     top: 10px;
-
 }
 
 #menu::before {

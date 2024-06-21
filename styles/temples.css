@@ -4,8 +4,7 @@ body {
 }
 
 header{
-    display: flex;
-    justify-content: space-evenly;
+    display: block;
     background-color: rgba(13, 104, 156, 0.993);
 }
 
@@ -14,6 +13,7 @@ h1{
     text-align: center;
     align-self: center;
     margin: 10px;
+    max-width: 100%;
 }
 
 nav{
@@ -22,6 +22,46 @@ nav{
     font-size: 22px;
     margin-right: 120px;
     align-self: center;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute; /* Changes here */
+    right: 20px; /* Changes here */
+    top: 10px;
+}
+
+#menu::before {
+	content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation a {
+	display: none;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navigation a:hover {
+	color: rgba(13, 104, 156, 0.993);
+    background-color: white;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
 a{
@@ -46,7 +86,7 @@ h2{
 }
 
 div{
-    margin: 0 auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr;
     max-width: 1800px;
@@ -55,6 +95,7 @@ div{
 
 img{
     border-radius: 10px;
+    max-width: 100%;
 }
 
 figcaption{
