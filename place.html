@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Temples Album - Samuel Alejandro Claros Garcia</title>
+        <meta name="description"
+            content="WDD 131 - Temples Album - Samuel Alejandro Claros Garcia - Temples album page, project of the week 02 of BYU Idaho WDD131 course">
+        <meta name="author" content="Samuel Alejandro Claros Garcia BYU-Idaho WDD 130 course, Temples Album">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Colombia</h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/valle-del-cocora-large.webp" media="(min-width: 600px)"/>
+                <img src="images/valle-del-cocora-smaller.webp" alt="Valle del Cocora" width="600" height="300"/>
+            </picture>
+            <div class="data">
+                <h2 class="data-title">Data</h2>
+                <table class="data-table">
+                    <tr>
+                        <td class="data-left">Area:</td>
+                        <td class="data-right">1,142 million km²</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Population:</td>
+                        <td class="data-right">51.87 million</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Capital:</td>
+                        <td class="data-right">Bogota</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Langagues:</td>
+                        <td class="data-right">Spanish</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Currency:</td>
+                        <td class="data-right">Peso Colombiano</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Time Zone:</td>
+                        <td class="data-right">GMT-5</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Calling Code:</td>
+                        <td class="data-right">+57</td>
+                    </tr>
+                    <tr>
+                        <td class="data-left">Internet TLD:</td>
+                        <td class="data-right">.co</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="weather">
+                <h2 class="weather-title">Weather</h2>
+                <picture class="logo">
+                    <source srcset="images/1530374_weather_day_sand_sandstorm_sun_icon.svg" media="(min-width: 600px)">
+                    <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather logo" width="60" height="30">
+                </picture>
+                <table class="weather-table">
+                    <tr>
+                        <td class="weather-left">Temperature:</td>
+                        <td class="weather-right">10°C</td>
+                    </tr>
+                    <tr>
+                        <td class="weather-left">Conditions:</td>
+                        <td class="weather-right">Partly Cloudly</td>
+                    </tr>
+                    <tr>
+                        <td class="weather-left">Wind:</td>
+                        <td class="weather-right">12 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="weather-left">Wind Chill: </td>
+                        <td class="weather-right" id="windchill"></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>©️ <span id="currentyear"></span> 🕹️🤪Samuel Alejandro Claros Garcia🤪🕹️ Cochabamba</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
