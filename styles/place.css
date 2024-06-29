@@ -54,6 +54,14 @@
         margin-top: 0;
     }
 
+    .logo::after{
+        content: "You can visit now!";
+        position: absolute;
+        left: 10rem;
+        color: white;
+        font-size: 25px;
+    }
+
     .weather-left {
         text-align: right;
     }

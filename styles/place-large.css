@@ -54,7 +54,7 @@
         position: absolute;
         top: 55rem;
         right: 12rem;
-        padding-top: 6rem;
+        padding-top: 7.5rem;
     }
 
     .weather-title{
@@ -64,7 +64,7 @@
         padding-left: 2rem;
         color: white;
         width: 14rem;
-        bottom: 10rem;
+        bottom: 11.5rem;
         right: 2.5rem;
     }
 
@@ -76,8 +76,12 @@
         left: 8.5rem;
     }
 
-    .logo img::selection{
-        color: red;
+    .logo::after{
+        content: "---> You can visit now! <---";
+        position: absolute;
+        left: 3.7rem;
+        top: 5.5rem;
+        color: var(--colombiaRed);
     }
 
     .weather-left{
