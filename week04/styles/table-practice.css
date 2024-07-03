@@ -1,0 +1,51 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table{
+    width: 400px;
+    margin: 20px auto;
+    border: thin solid grey;
+	box-shadow: 0 0 10px black;
+	border-collapse: collapse;
+}
+
+caption{
+    padding: 10px;
+    caption-side: bottom;
+	color: black;
+	font-size: .85rem;
+}
+
+th:first-child, .empty{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+th, td{
+    padding: 1rem;
+}
+
+tbody td{
+    border: 1px solid rgb(156, 156, 156);
+    text-align: center;
+}
+
+.colored{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+}
+
+tbody{
+    border: 1px solid lightgray;
+}
+
+.paint{
+    background-color: lightgrey;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: white;
+}
