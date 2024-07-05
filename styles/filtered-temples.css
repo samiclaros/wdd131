@@ -48,7 +48,6 @@ nav {
     text-align: center;
     text-decoration: none;
     color: #fff;
-    /* padding: 1rem; */
 }
 
 .navigation a:hover {
@@ -56,7 +55,6 @@ nav {
     background-color: white;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
 nav.open a {
     display: flex;
     flex-direction: column;
@@ -76,31 +74,41 @@ nav a:hover {
 
 /* BODY */
 
-main {
-    margin: 1rem auto;
-    display: block;
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    justify-items: center;
-}
-
-h2 {
+/* h2 {
     text-align: center;
     color: rgba(13, 104, 156, 0.993);
     margin: 2rem;
     font-size: 30px;
     grid-column: 1/-1;
-}
+} */
 
 img {
     border-radius: 10px;
     max-width: 100%;
 }
 
-figcaption {
+div{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5rem;
+}
+
+section{
+    background-color: rgba(13, 104, 156, 0.2);
+    padding: 2rem;
+    margin: 2rem;
+    color: black;
     text-align: center;
-    font-size: 20px;
-    margin-top: 1rem;
+}
+
+section img{
+    height: 200px;
+    width: auto;
+}
+
+.description{
+    color: black;
+    font-weight: bold;
 }
 
 footer {

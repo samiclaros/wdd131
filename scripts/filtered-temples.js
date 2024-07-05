@@ -89,12 +89,62 @@ const temples = [
 	}
 ];
 
-const templeContainer = document.querySelector("#templeContainer");
+createTempleCard(temples);
 
-temples.forEach(function(temple){
-	console.log('Temple Name: ' + temple.templeName());
-  	console.log('Location: ' + temple.location());
-  	console.log('Dedicated: ' + temple.dedicated());
-  	console.log('Size: ' + temple.area());
-  	console.log(temple.imageUrl());
+const home = document.querySelector("#home");
+const oldTemple = document.querySelector("#old");
+const newTemple = document.querySelector("#newTemple");
+const bigTemple = document.querySelector("#bigTemple");
+const smallTemple = document.querySelector("#smallTemple");
+
+home.addEventListener("click", () => {
+	createTempleCard(temples);
 });
+
+oldTemple.addEventListener("click", () => {
+	const oldTemples = temples.filter(temple => new Date(temple.dedicated.split(', ')).getFullYear() < 1900);
+    createTempleCard(oldTemples);
+});
+
+newTemple.addEventListener("click", () => {
+	const newTemples = temples.filter(temple => new Date(temple.dedicated.split(', ')).getFullYear() > 2000);
+	createTempleCard(newTemples);
+});
+
+bigTemple.addEventListener("click", () => {
+	const bigTemples = temples.filter(temple => (temple.area > 90000));
+	createTempleCard(bigTemples);
+});
+
+smallTemple.addEventListener("click", () => {
+	const smallTemples = temples.filter(temple => (temple.area < 10000));
+	createTempleCard(smallTemples);
+});
+
+function createTempleCard(filteredTemples) {
+	document.querySelector("#templeContainer").innerHTML = "";
+	filteredTemples.forEach(temple => {
+		let card = document.createElement("section");
+		let name = document.createElement("h3");
+		let location = document.createElement("p");
+		let dedication = document.createElement("p");
+		let area = document.createElement("p");
+		let img = document.createElement("img");
+
+		name.textContent = temple.templeName;
+		location.innerHTML = `<span class="description">Location:</span> ${temple.location}`;
+		dedication.innerHTML = `<span class="description">Dedicated:</span> ${temple.dedicated}`;
+		area.innerHTML = `<span class="description">Size:</span> ${temple.area} sq ft`;
+		img.setAttribute("src", temple.imageUrl);
+		img.setAttribute("alt", `${temple.templeName} Temple`);
+		img.setAttribute("loading", "lazy");
+
+		card.appendChild(name);
+		card.appendChild(location);
+		card.appendChild(dedication);
+		card.appendChild(area);
+		card.append(img);
+
+		document.querySelector("#templeContainer").appendChild(card);
+	});
+}
