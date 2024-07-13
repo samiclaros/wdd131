@@ -121,6 +121,7 @@
     /* STARS */
     .stars{
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-around;
         align-items: center;
         padding-bottom: 2rem;
