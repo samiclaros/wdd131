@@ -57,6 +57,8 @@ products.forEach(product => {
 
 // CONTENT OF THE LIST OF PRODUCTS
 
+// NUMBER OF REVIEWS
+
 const reviewAmount = document.querySelector("#review-amount");
 let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
 
@@ -68,3 +70,5 @@ if (numReviews > 0) {
 
 numReviews++;
 localStorage.setItem("numReviews-ls", numReviews);
+
+// NUMBER OF REVIEWS
