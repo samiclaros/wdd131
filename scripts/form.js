@@ -12,3 +12,8 @@ lastModified.innerHTML = `Last modified: <span class="highlight">${new Intl.Date
     timeStyle: "medium"
 	}
 ).format(lastModifiedDate)}</span>`;
+
+// CONTENT OF THE LIST OF PRODUCTS
+
+
+const productName = document.querySelector("#product-name");
