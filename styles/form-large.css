@@ -12,7 +12,7 @@
     /* BODY */
     body{
         font-family: "Pt Sans", sans-serif;
-		margin: auto;
+		margin: 0 auto;
 		max-width: 60rem;
     }
     /* BODY */
@@ -57,6 +57,7 @@
         min-width: 49.2rem;
         min-height: 3rem;
         font-size: 1rem;
+        width: 100%;
     }
 
     .pr select{
