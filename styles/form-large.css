@@ -52,16 +52,20 @@
     .pr select,
     .pr [type="date"],
     .pr [type="text"],
-    textarea {
+    textarea{
         display: block;
-        min-width: 49.2rem;
-        min-height: 3rem;
-        font-size: 1rem;
         width: 100%;
+        height: auto;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
     }
 
-    .pr select{
-        min-width: 49.5rem;
+    .pr select,
+    .pr [type="date"],
+    .pr [type="text"],
+    textarea{
+        height: 3rem;
     }
 
     .cursive{
@@ -106,7 +110,7 @@
         border: none;
         background-image: linear-gradient(rgba(22, 58, 106, 0.801), rgb(22, 58, 106));
         color: white;
-        border-radius: 6px;
+        border-radius: 10px;
         padding: .8rem;
         min-width: 49.7rem;
         margin-top: 1.5rem;
@@ -166,6 +170,14 @@
     /* REQUIRED */
 
     /* STARS */
+
+    /* REVIEW HTML here appears the numbr of times the file is reviewed*/
+    .review{
+        font-size: 2rem;
+        color: var(--form-background-color);
+        text-align: center;
+    }
+    /* REVIEW HTML */
 
     /* FOOTER */
     footer{
