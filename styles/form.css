@@ -163,7 +163,7 @@
 
     /* REQUIRED */
     .required{
-        color: red;
+        color: var(--form-background-color);
     }
     /* REQUIRED */
 
