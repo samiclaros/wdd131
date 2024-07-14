@@ -1,0 +1,36 @@
+:root{
+    --background: #335b80;
+    --color-title: #ffffff;
+    --text-color: #000000;
+    --color-title-content: #05325c;
+}
+
+body{
+    padding: 1rem;
+}
+
+h1{
+    background-color: var(--background);
+    color: #ffffff;
+    padding: 1rem;
+    font-family: Comfortaa, sans-serif;
+}
+
+h2, h3{
+    color: var(--color-title-content);
+    font-family: "Sora", sans-serif;
+}
+
+p, li{
+    font-size: 1.2rem;
+    font-family: "Encode Sans", sans-serif;
+}
+    
+.question{
+    color: var(--color-title-content);
+    font-size: 1.2rem;
+}
+
+.ask{
+    color: var(--text-color);
+}
