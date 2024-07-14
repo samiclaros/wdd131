@@ -1,22 +1,3 @@
-// To get the last modified
-
-const currentyear = document.querySelector("#currentyear");
-const today = new Date();
-currentyear.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
-const lastModified = document.querySelector("#lastModified");
-const lastModifiedDate = new Date(document.lastModified);
-
-lastModified.innerHTML = `Last modified: <span class="highlight">${new Intl.DateTimeFormat(
-	"en-US",
-	{
-		dateStyle: "short",
-    timeStyle: "medium"
-	}
-).format(lastModifiedDate)}</span>`;
-
-// To get the last modified
-
 // CONTENT OF THE LIST OF PRODUCTS
 
 const products = [
@@ -56,19 +37,3 @@ products.forEach(product => {
 });
 
 // CONTENT OF THE LIST OF PRODUCTS
-
-// NUMBER OF REVIEWS
-
-const reviewAmount = document.querySelector("#review-amount");
-let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
-
-if (numReviews > 0) { 
-  reviewAmount.textContent = numReviews;
-} else {
-  reviewAmount.textContent = `This is your first review 🤩`;
-}
-
-numReviews++;
-localStorage.setItem("numReviews-ls", numReviews);
-
-// NUMBER OF REVIEWS
