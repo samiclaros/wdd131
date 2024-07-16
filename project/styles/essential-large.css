@@ -6,34 +6,197 @@
         --color-title-content: #05325c;
     }
 
+    *{
+        box-sizing: border-box;
+    }
+
+    /* HOME PAGE */
     body{
-        padding: 1rem;
-        max-width: 70rem;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     h1{
-        background-color: var(--background);
         color: #ffffff;
-        padding: 1rem;
         font-family: Comfortaa, sans-serif;
+        font-size: 3rem;
+        letter-spacing: 0.7rem;
     }
 
     h2, h3{
-        color: var(--color-title-content);
         font-family: "Sora", sans-serif;
+        color: var(--color-title-content);
     }
 
-    p, li{
+    p{
         font-size: 1.2rem;
         font-family: "Encode Sans", sans-serif;
     }
-    
-    .question{
-        color: var(--color-title-content);
-        font-size: 1.2rem;
+
+    /* HEADER */
+
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--background);
     }
 
-    .ask{
-        color: var(--text-color);
+    .top-nav {
+        display: flex;
+        justify-content: center;
     }
+
+    .top-nav a {
+        font-family: Comfortaa, sans-serif;
+        color: var(--color-title);
+        text-decoration: none;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        font-size: 1.7rem;
+        text-align: center;
+        align-content: center;
+        letter-spacing: .1rem;
+    }
+
+    .top-nav a:hover {
+        background-color: var(--color-title);
+        color: var(--background);
+    }
+
+    /* HEADER */
+
+    /* MAIN */
+
+    .hero img{
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: brightness(60%);
+    }
+
+    .announcement-title{
+        position: absolute;
+        width: 30%;
+        top: 10rem;
+        left: 65rem;
+        color: var(--color-title);
+        font-size: 5rem;
+        padding-left: 5rem;
+    }
+
+    .announcement-text{
+        position: absolute;
+        color: var(--color-title);
+        width: 30%;
+        top: 32rem;
+        left: 70rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    /* TOP SALES */
+
+    .top-sales{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin-top: 2.5rem;
+        box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-sales h2{
+        font-size: 3rem;
+        text-align: center;
+        grid-column: 1 / 4;
+    }
+
+    .top-sales img{
+        width: 50%;
+        height: auto;
+    }
+
+    .available{
+        color: var(--color-title-content);
+        font-weight: bold;
+    }
+    
+    /* TOP SALES */
+
+    /* EXPERIENCES */
+
+    .experiences{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-top: 2.5rem;
+    }
+
+    .experiences h2{
+        font-size: 3rem;
+        text-align: center;
+        grid-column: 1/3;
+    }
+
+    .elder-berret{
+        text-align: center;
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+
+    .elder-byro-caption{
+        text-align: center;
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+
+    .experiences-text, .experiences-text-2{
+        text-align: center;
+        /* padding: 2rem; */
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    .experiences-text-2{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        width: 80%;
+    }
+
+    .elder-byro{
+        grid-row: 2/3;
+        grid-column: 2/3;
+        margin-top: 1.6rem;
+    }
+    /* EXPERIENCES */
+
+    /* MAIN */
+
+    /* HOME PAGE */
+
+    /* FOOTER */
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: Comfortaa, sans-serif;
+        justify-items: center;
+        margin-top: 2.5rem;
+        background-color: var(--background);
+        color: var(--color-title);
+    }
+
+    .sociallinks a{
+        grid-column: 2/3;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .sociallinks img{
+        margin-top: .8rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    /* FOOTER */
 }
