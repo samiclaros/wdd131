@@ -63,9 +63,34 @@
         color: var(--background);
     }
 
+    /* BUTON */
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.top-nav {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+    .top-nav a {
+		display: block;
+	}
+
+    a{
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+    /* BUTON */
+
     /* HEADER */
 
     /* MAIN */
+
+    .text-in-hero{
+        width: 50%;
+    }
 
     .hero img{
         width: 100%;
@@ -76,8 +101,18 @@
 
     .announcement-title{
         position: absolute;
-        width: 30%;
+        width: 100%;
         top: 10rem;
+        left: 65rem;
+        color: var(--color-title);
+        font-size: 5rem;
+        padding-left: 5rem;
+    }
+
+    .announcement-title-2{
+        position: absolute;
+        width: 100%;
+        top: 16rem;
         left: 65rem;
         color: var(--color-title);
         font-size: 5rem;
@@ -87,7 +122,8 @@
     .announcement-text{
         position: absolute;
         color: var(--color-title);
-        width: 30%;
+        width: 100%;
+        max-width: 40rem;
         top: 32rem;
         left: 70rem;
         font-size: 1.5rem;
@@ -130,6 +166,7 @@
         justify-items: center;
         align-items: center;
         margin-top: 2.5rem;
+        width: 100%;
     }
 
     .experiences h2{
@@ -152,7 +189,6 @@
 
     .experiences-text, .experiences-text-2{
         text-align: center;
-        /* padding: 2rem; */
         font-size: 1.5rem;
         width: 70%;
     }
