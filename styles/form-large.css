@@ -9,15 +9,12 @@
         --text-color: rgb(0, 0, 0);
     }
 
-    /* BODY */
     body{
         font-family: "Chivo", sans-serif;
 		margin: 0 auto;
 		max-width: 70rem;
     }
-    /* BODY */
-
-    /* HEADER */
+ 
     h1{
         background-color: var(--form-background-color);
         color: var(--titles);
@@ -26,9 +23,7 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    /* HEADER */
-
-    /* MAIN */
+  
     form{
         border: solid 4px var(--form-background-color);
         border-bottom: 0;
@@ -36,9 +31,7 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    /* MAIN */
 
-    /* FORM */
     .pr{
         padding-left: 7rem;
         padding-right: 7rem;
@@ -105,7 +98,6 @@
         margin-right: 0.5rem;
     }
 
-    /* BUTTON */
     .pr input[type="submit"]{
         border: none;
         background-image: linear-gradient(rgba(22, 58, 106, 0.801), rgb(22, 58, 106));
@@ -118,11 +110,6 @@
         box-shadow: 1px 1px 4px #3b3b3b;
         font-size: 1.5rem;
     }
-    /* BUTTON */
-
-    /* FORM */
-
-    /* STARS */
     .stars{
         display: flex;
         flex-direction: row-reverse;
@@ -162,33 +149,23 @@
 	    content: "\2605";
 
     }
-
-    /* REQUIRED */
+    
     .required{
         color: var(--form-background-color);
     }
-    /* REQUIRED */
-
-    /* STARS */
-
-    /* REVIEW HTML here appears the numbr of times the file is reviewed*/
+    
     .review{
         font-size: 2rem;
         color: var(--form-background-color);
         text-align: center;
     }
-    /* REVIEW HTML */
-
-    /* FOOTER */
+   
     footer{
 		text-align: center;
 		font-size: 18px;
 		background-color: var(--form-background-color);
 		color: white;
         margin-top: 0;
-		/* margin-top: 30px; */
 		padding: .5px;
 	}
-    /* FOOTER */
-
 }
