@@ -101,7 +101,7 @@
 
     .announcement-title{
         position: absolute;
-        width: 100%;
+        max-width: 100%;
         top: 10rem;
         left: 65rem;
         color: var(--color-title);
