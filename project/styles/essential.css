@@ -104,8 +104,8 @@
     }
     
     .navigation a:hover {
-        color: rgba(13, 104, 156, 0.993);
-        background-color: white;
+        color: var(--color-title);
+        background-color: var(--background);
     }
 
     
@@ -114,8 +114,15 @@
 
     /* MAIN */
 
+    .hero,
+    .announcement-title,
+    .announcement-title-2,
+    .announcement-text{
+        max-width: 100%;
+    }
+
     .hero img{
-        width: 100%;
+        max-width: 100%;
         height: auto;
         display: block;
         filter: brightness(60%);
@@ -123,21 +130,21 @@
 
     .announcement-title{
         position: absolute;
-        width: 30%;
+        width: 40%;
         top: 10rem;
-        left: 65rem;
+        left: 30rem;
         color: var(--color-title);
-        font-size: 5rem;
+        font-size: 2rem;
         padding-left: 5rem;
     }
 
     .announcement-title-2{
         position: absolute;
         width: 100%;
-        top: 16rem;
-        left: 65rem;
+        top: 13rem;
+        left: 30rem;
         color: var(--color-title);
-        font-size: 5rem;
+        font-size: 2rem;
         padding-left: 5rem;
     }
 
@@ -145,9 +152,9 @@
         position: absolute;
         color: var(--color-title);
         width: 30%;
-        top: 32rem;
-        left: 70rem;
-        font-size: 1.5rem;
+        top: 18rem;
+        left: 35rem;
+        font-size: .7rem;
         line-height: 1.5;
     }
 
@@ -162,7 +169,7 @@
     }
 
     .top-sales h2{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         grid-column: 1 / 4;
     }
@@ -170,6 +177,16 @@
     .top-sales img{
         width: 50%;
         height: auto;
+        margin: 0 auto;
+    }
+
+    .top-tie,
+    .top-belt{
+        max-height: 17rem;
+    }
+
+    .description-top-shoes{
+        margin-top: 2.2rem;
     }
 
     .available{
@@ -190,7 +207,7 @@
     }
 
     .experiences h2{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         grid-column: 1/3;
     }
@@ -208,8 +225,8 @@
     }
 
     .experiences-text, .experiences-text-2{
-        text-align: center;
-        font-size: 1.5rem;
+        text-align: justify;
+        font-size: 1rem;
         width: 70%;
     }
 
@@ -232,7 +249,62 @@
 
     /* STORE PAGE */
 
-    /* Aca me quede... */
+    .belts-block-title,
+    .shoes-block-title,
+    .ties-block-title{
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        grid-column: 1/4;
+    }
+
+    .belts,
+    .shoes,
+    .ties{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .belts img,
+    .shoes img,
+    .ties img{
+        max-width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .tie2{
+        margin-top: 2rem;
+    }
+
+    .tie3{
+        margin-top: 1.6rem;
+    }
+
+    .belts-title,
+    .shoes-title,
+    .ties-title{
+        font-size: 2rem;
+    }
+
+    .belts-colors,
+    .shoes-colors,
+    .ties-colors,
+    .belts-price,
+    .shoes-price,
+    .ties-price{
+        font-size: 1.5rem;
+    }
+
+    .coming-soon{
+        color: var(--color-title-content);
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+        text-align: center;
+    }
 
     /* STORE PAGE */
 
@@ -241,11 +313,16 @@
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        min-height: 6rem;
         font-family: Comfortaa, sans-serif;
         justify-items: center;
+        align-items: center;
         margin-top: 2.5rem;
         background-color: var(--background);
         color: var(--color-title);
+    }
+    footer p{
+        font-size: 1.1rem;
     }
 
     .sociallinks a{
