@@ -155,7 +155,7 @@
     .top-belt{
         max-height: 17rem;
     }
-    
+
     .available{
         color: var(--color-title-content);
         font-weight: bold;
@@ -248,7 +248,7 @@
     }
 
     .tie3{
-        margin-top: 1.6rem;
+        margin-top: 2rem;
     }
 
     .belts-title,
