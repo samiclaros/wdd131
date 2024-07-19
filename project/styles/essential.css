@@ -95,7 +95,7 @@
         position: absolute;
         width: 100%;
         background-color: var(--background);
-        top: 24%;
+        top: 15%;
         left: 0;
         right: 0;
         z-index: 1;
@@ -387,7 +387,7 @@
     .windchill{
         position: absolute;
         color: var(--color-title);
-        top: 9%;
+        top: 7%;
         left: 7.1%;
     }
     /* FOOTER */
