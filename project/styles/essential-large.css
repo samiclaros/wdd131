@@ -92,6 +92,10 @@
         max-width: 100%;
     }
 
+    .description-hero{
+        max-width: 100%;
+    }
+
     .hero img{
         width: 100%;
         height: auto;
@@ -101,7 +105,7 @@
 
     .announcement-title{
         position: absolute;
-        max-width: 100%;
+        /* max-width: 100%; */
         top: 10rem;
         left: 65rem;
         color: var(--color-title);
@@ -111,7 +115,7 @@
 
     .announcement-title-2{
         position: absolute;
-        max-width: 100%;
+        /* max-width: 100%; */
         top: 16rem;
         left: 65rem;
         color: var(--color-title);
