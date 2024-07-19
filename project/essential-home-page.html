@@ -22,12 +22,15 @@
         </nav>
     </header>
     <main>
+        <picture class="weather-logo">
+            <source srcset="images/1530374_weather_day_sand_sandstorm_sun_icon.svg" media="(min-width: 600px)">
+            <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather logo" width="120" height="60">
+        </picture>
+        <p class="weather-information">Temperature: 7°C</p>
+        <p class="windchill">Windchill: <span id="windchill"></span></p>
         <div class="hero">
-            <figure>
-                <img src="images/missionary-large.webp" alt="Two missionaries walking trough grass" loading="lazy">
-            </figure>
-            <h2 class="announcement-title">Are you going in</h2>
-            <h2 class="announcement-title-2">a mission?</h2>
+            <img src="images/missionary-large.webp" alt="Two missionaries walking trough grass" loading="lazy">
+            <p class="announcement-title">Are you going on a mission?</p>
             <p class="announcement-text">Here in Essential Clothes for missionaries, we can help you to find your clothes for this blessing time. We can asure you our clothes will resist at least 2 years. 
             If it does not last two years, we will give you a new garment without any extra payment.</p>
         </div>
@@ -70,7 +73,6 @@
         </div>
     </main>
     <footer>
-        <p>©️ <span id="currentyear"></span> ESSENTIALS Cochabamba-Bolivia</p>
         <nav class="sociallinks">
             <a href="https://facebook.com">
                 <img src="images/facebook.png" alt="Facebook" width="55" height="50" loading="lazy">
@@ -82,6 +84,8 @@
                 <img src="images/instagram.png" alt="Instagram" width="52" height="50" loading="lazy">
             </a>
         </nav>
+        <p class="town-name-weather">📍 Cochabamba Bolivia</p>
+        <p class="rights-reserved">©️ <span id="currentyear"></span> ESSENTIALS</p>
     </footer>
 </body>
 </html>

@@ -6,14 +6,19 @@
         --color-title-content: #05325c;
     }
 
+    /* HOME PAGE */
+
     *{
         box-sizing: border-box;
     }
 
-    /* HOME PAGE */
     body{
         margin: 0 auto;
-        max-width: 100%;
+    }
+
+    header, main, footer{
+        max-width: 2000px;
+        margin: 0 auto;
     }
 
     h1{
@@ -21,6 +26,7 @@
         font-family: Comfortaa, sans-serif;
         font-size: 3rem;
         letter-spacing: 0.7rem;
+        padding-left: 10rem;
     }
 
     h2, h3{
@@ -29,7 +35,6 @@
     }
 
     p{
-        font-size: 1.2rem;
         font-family: "Encode Sans", sans-serif;
     }
 
@@ -89,7 +94,7 @@
     /* MAIN */
 
     .hero{
-        max-width: 100%;
+        position: relative;
     }
 
     .description-hero{
@@ -105,30 +110,22 @@
 
     .announcement-title{
         position: absolute;
-        /* max-width: 100%; */
-        top: 10rem;
-        left: 65rem;
+        top: 5%;
+        left: 60%;
+        right: 5%;
         color: var(--color-title);
         font-size: 5rem;
-        padding-left: 5rem;
-    }
-
-    .announcement-title-2{
-        position: absolute;
-        /* max-width: 100%; */
-        top: 16rem;
-        left: 65rem;
-        color: var(--color-title);
-        font-size: 5rem;
-        padding-left: 5rem;
+        padding: 0;
     }
 
     .announcement-text{
         position: absolute;
         color: var(--color-title);
-        max-width: 100%;
-        top: 32rem;
-        left: 70rem;
+        width: unset;
+        top: 50%;
+        left: 60%;
+        right: 5%;
+        padding: 0;
         font-size: 1.5rem;
         line-height: 1.5;
     }
@@ -147,6 +144,10 @@
         font-size: 3rem;
         text-align: center;
         grid-column: 1 / 4;
+    }
+
+    .top-sales p {
+        font-size: 1.5rem;
     }
 
     .top-sales img{
@@ -326,7 +327,7 @@
 
     footer{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         font-family: Comfortaa, sans-serif;
         justify-items: center;
         align-items: center;
@@ -337,7 +338,7 @@
     }
 
     footer p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .sociallinks a{
@@ -352,5 +353,24 @@
         margin-left: 1rem;
     }
 
+    .weather-logo{
+        position: absolute;
+        top: 3.8%;
+        right: 95%;
+    }
+
+    .weather-information{
+        position: absolute;
+        color: var(--color-title);
+        top: 3%;
+        left: 4%;
+    }
+
+    .windchill{
+        position: absolute;
+        color: var(--color-title);
+        top: 6%;
+        left: 4%;
+    }
     /* FOOTER */
 }

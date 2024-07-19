@@ -14,14 +14,29 @@ hamButton.addEventListener('click', () => {
 
 // HAM BUTTON
 
-// ACTUAL WEATHER
+// ACTUAL WINDCHILL
 
-// aca quede...
+const windSpeed = 12;
+const temperature = 7;
+const windchill = document.querySelector("#windchill");
 
-// ACTUAL WEATHER
+const windchillOperation = function(temperature, windSpeed){
+    if(temperature <=10 && windSpeed > 4.8)
+        {
+            let windchill = 13.12 + (0.6215*temperature) - (11.37*(windSpeed**0.16)) + (0.3965*temperature*(windSpeed**0.16));
+            return windchill.toFixed(2);
+        }
+    else
+    {
+        return "N/A";
+    }
+}
+windchill.innerHTML = `<span class="highlight">${windchillOperation(temperature, windSpeed)}</span>`;
+
+// ACTUAL WINDCHILL
 
 // LIST OF THE STORE
 
-// aca quede...
+
 
 // LIST OF THE STORE
