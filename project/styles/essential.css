@@ -358,6 +358,11 @@
         margin-bottom: 3rem;
     }
 
+    .about-us figure{
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
     .myself-introduction-about-us-page,
     .baptism-of-fidelina,
     .purpose-of-the-site{
