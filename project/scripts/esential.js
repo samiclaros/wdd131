@@ -86,30 +86,39 @@ windchill.innerHTML = `<span class="highlight">${windchillOperation(temperature,
 // SELECT OPTION IN FORM
 const cities = [
 	{
+        zipNumber: 3221,
 	    city: "Cochabamba"
 	},
 	{
+        zipNumber: 9821,
         city: "Santa Cruz"
 	},
 	{
+        zipNumber: 2417,
         city: "La Paz"
 	},
 	{
+        zipNumber: 1693,
         city: "Chuquisaca"
 	},
 	{
+        zipNumber: 2185,
         city: "Sucre"
 	},
     {
+        zipNumber: 9124,
         city: "Pando"
 	},
     {
+        zipNumber: 7642,
         city: "Beni"
 	},
     {
+        zipNumber: 2081,
         city: "Tarija"
 	},
     {
+        zipNumber: 5201,
         city: "Oruro"
 	}
 ];
