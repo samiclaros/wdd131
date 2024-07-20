@@ -83,3 +83,51 @@ windchill.innerHTML = `<span class="highlight">${windchillOperation(temperature,
 // LIST OF THE STORE COMMENTS: I tried to use this, but the styling part was a challenge for me. I tried to set attributes and classes but I finally decided 
 // 							   to not add this. Actually works, but the styling part was a problem for me.
 
+// SELECT OPTION IN FORM
+const cities = [
+	{
+	    city: "Cochabamba"
+	},
+	{
+        city: "Santa Cruz"
+	},
+	{
+        city: "La Paz"
+	},
+	{
+        city: "Chuquisaca"
+	},
+	{
+        city: "Sucre"
+	},
+    {
+        city: "Pando"
+	},
+    {
+        city: "Beni"
+	},
+    {
+        city: "Tarija"
+	},
+    {
+        city: "Oruro"
+	}
+];
+
+const citySelector = document.querySelector("#city");
+cities.forEach(cityObj => {
+	const option = document.createElement("option");
+	option.value = cityObj.city;
+	option.textContent = cityObj.city;
+	citySelector.appendChild(option);
+});
+// SELECT OPTION IN FORM
+
+// NUMBER OF REVIEWS
+
+let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+
+numReviews++;
+localStorage.setItem("numReviews-ls", numReviews);
+
+// NUMBER OF REVIEWS
