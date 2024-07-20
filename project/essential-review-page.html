@@ -7,6 +7,7 @@
     <meta name="description" content="We are a company create specifically for Elders, if you don´t know what you need in your mission, come to Essential, we have all you need">
     <meta name="author" content="Samuel Alejandro Claros Garcia">
     <link rel="stylesheet" href="styles/essential.css">
+    <link rel="stylesheet" href="styles/essential-horizontal-view.css">
     <link rel="stylesheet" href="styles/essential-large.css">
     <script src="scripts/esential.js" defer></script>
 </head>
@@ -22,12 +23,15 @@
         </nav>
     </header>
     <main>
-        <picture class="weather-logo">
-            <source srcset="images/1530374_weather_day_sand_sandstorm_sun_icon.svg" media="(min-width: 600px)">
-            <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather logo" width="120" height="60">
-        </picture>
-        <p class="weather-information">Temperature: 7°C</p>
-        <p class="windchill">Windchill: <span id="windchill"></span></p>
+        <div class="weather-container">
+            <picture class="weather-logo">
+                <source srcset="images/1530374_weather_day_sand_sandstorm_sun_icon.svg" media="(min-width: 600px)">
+                <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather logo" width="80" height="40">
+            </picture>
+            <p class="weather-country">Cochabamba-Bolivia</p>
+            <p class="weather-information">Temperature: 7°C</p>
+            <p class="windchill">Windchill: <span id="windchill"></span></p>
+        </div>
         <p class="form-reviewed">Thanks for send your form! We appreciate your comments.</p>
         <p class="form-reviewed">We will contact you the fastest way possible.</p>
     <footer>
