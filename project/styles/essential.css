@@ -1,4 +1,4 @@
-@media screen and (max-width: 899px) {
+@media screen and (min-width: 431px) and (max-width: 899px) {
     
     :root{
         --background: #335b80;
@@ -565,7 +565,7 @@
     /* FOOTER */
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 430px) {
     
     :root{
         --background: #335b80;
@@ -581,15 +581,14 @@
     /* HOME PAGE */
     body{
         margin: 0 auto;
-        max-width: 100%;
+        max-width: 430px;
     }
 
     h1{
         color: #ffffff;
         font-family: Comfortaa, sans-serif;
-        font-size: 3rem;
-        letter-spacing: 0.7rem;
-        padding-left: 4rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.5rem;
     }
 
     h2, h3{
@@ -607,6 +606,7 @@
         display: flex;
         justify-content: space-evenly;
         background-color: var(--background);
+        height: 2rem;
     }
 
     .top-nav {
@@ -620,7 +620,7 @@
         text-decoration: none;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
-        font-size: 1.7rem;
+        font-size: .8rem;
         text-align: center;
         align-content: center;
         letter-spacing: .1rem;
@@ -635,13 +635,13 @@
 
     /* BUTTON */
     #menu {
-        font-size: 3rem;
+        font-size: 1rem;
         border: 0;
         background: none;
         color: var(--color-title);
         position: absolute;
         right: 5%;
-        top: 3%;
+        top: 1%;
         padding: 0 0 30px 0;
         text-decoration: none;
     }
@@ -662,7 +662,7 @@
         position: absolute;
         width: 100%;
         background-color: var(--background);
-        top: 15%;
+        top: 4%;
         left: 0;
         right: 0;
         z-index: 1;
@@ -691,6 +691,39 @@
 
     /* MAIN */
 
+    .weather-container{
+        background-color: var(--background);
+        display: grid;
+        grid-template-columns: 1.7fr 1fr 1.5fr;
+        align-items: center;
+        text-align: center;
+        height: 2.5rem;
+    }
+
+    .weather-logo{
+        position: absolute;
+        top: 3.3%;
+        right: 80%;
+    }
+
+    .weather-information{
+        color: var(--color-title);
+        font-size: .6rem;
+        grid-column: 2/3;
+    }
+
+    .weather-country{
+        color: var(--color-title);
+        font-size: .6rem;
+        text-align: end;
+    }
+
+    .windchill{
+        color: var(--color-title);
+        font-size: .6rem;
+        text-align: left;
+    }
+
     .hero img{
         width: 100%;
         height: auto;
@@ -699,26 +732,21 @@
     }
 
     .announcement-title{
-        /* position: absolute; */
-        top: 15%;
-        left: 57%;
-        right: 5%;
-        font-size: 2rem;
+        font-size: 1.2rem;
         color: var(--color-title-content);
         text-align: center;
         font-weight: bold;
+        margin-top: 2rem;
     }
 
     .announcement-text{
-        /* position: absolute; */
         color: var(--color-title-content);
         margin: 0 auto;
         text-align: justify;
-        width: 70%;
-        /* top: 27%;
-        left: 55%; */
+        width: 80%;
         line-height: 1.5;
         padding: 1em;
+        font-size: .8rem;
     }
 
     /* TOP SALES */
@@ -732,13 +760,13 @@
     }
 
     .top-sales h2{
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: center;
         color: var(--color-title-content);
     }
 
     .top-sales p {
-        font-size: 1.5rem;
+        font-size: .8rem;
     }
 
     .top-sales img{
@@ -770,11 +798,12 @@
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        justify-content: center;
         margin-top: 2.5rem;
     }
 
     .experiences h2{
-        font-size: 2rem;
+        font-size: 1.2rem;
         text-align: center;
         color: var(--color-title-content);
     }
@@ -1094,8 +1123,9 @@
         background-color: var(--background);
         color: var(--color-title);
     }
+
     footer p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .sociallinks a{
@@ -1108,26 +1138,6 @@
         margin-top: .8rem;
         margin-right: 1rem;
         margin-left: 1rem;
-    }
-
-    .weather-logo{
-        position: absolute;
-        top: 5%;
-        right: 90%;
-    }
-
-    .weather-information{
-        position: absolute;
-        color: var(--color-title);
-        top: 3%;
-        left: 7%;
-    }
-
-    .windchill{
-        position: absolute;
-        color: var(--color-title);
-        top: 7%;
-        left: 7.1%;
     }
     /* FOOTER */
 }
