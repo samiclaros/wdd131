@@ -476,14 +476,14 @@
     }
 
     .essential-form input:required:invalid,
-    .essential-form select:required:invalid,
-    .essential-form input[type="date"]:required:invalid {
+    .essential-form select:required:invalid
+    {
         border-right: solid 3px red;
     }
 
     .essential-form input:required,
-    .essential-form select:required:invalid,
-    .essential-form input[type="date"]:required:valid {
+    .essential-form select:required:valid
+    {
         border-right: solid 3px green;
     }
 

@@ -137,7 +137,7 @@ cities.forEach(cityObj => {
 const essentialForm = document.querySelector("#essential-form");
 
 essentialForm.addEventListener("submit", (event) => {
-    let numReviews = Number(window.localStorage.getItem("numReviews-ls")) || 0;
+    let numReviews = Number(window.localStorage.getItem("numOfFormsCompleted-ls")) || 0;
     numReviews++;
     localStorage.setItem("numReviews-ls", numReviews);
 });
