@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 933px) and (max-width: 2000px){
     :root{
         --background: #335b80;
         --color-title: #ffffff;
@@ -22,7 +22,7 @@
     }
 
     h1{
-        color: #ffffff;
+        color: var(--color-title);
         font-family: Comfortaa, sans-serif;
         font-size: 3rem;
         letter-spacing: 0.7rem;
@@ -92,6 +92,44 @@
     /* HEADER */
 
     /* MAIN */
+
+    .weather-container{
+        background-color: var(--color-title-content);
+        display: grid;
+        grid-template-columns: 2fr 1.7fr 1.7fr;
+        align-items: center;
+        text-align: center;
+    }
+
+    .weather-logo{
+        position: absolute;
+        top: 11%;
+        right: 85%;
+    }
+
+    .weather-logo img{
+        width: 110px;
+        height: auto;
+    }
+
+    .weather-information{
+        color: var(--color-title);
+        font-size: 1.7rem;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .weather-country{
+        color: var(--color-title);
+        font-size: 1.7rem;
+        text-align: end;
+    }
+
+    .windchill{
+        color: var(--color-title);
+        font-size: 1.7rem;
+        text-align: left;
+    }
 
     .hero{
         position: relative;
@@ -524,572 +562,11 @@
         margin-left: 1rem;
     }
 
-    .weather-logo{
-        position: absolute;
-        top: 3.8%;
-        right: 95%;
-    }
-
-    .weather-information{
-        position: absolute;
-        color: var(--color-title);
-        top: 3%;
-        left: 4%;
-    }
-
-    .windchill{
-        position: absolute;
-        color: var(--color-title);
-        top: 6%;
-        left: 4%;
+    .facebook-logo,
+    .twitter-logo,
+    .instagram-logo{
+        width: 4rem;
+        height: 4rem;
     }
     /* FOOTER */
-}
-
-@media screen and (min-width: 500px) {
-        :root{
-            --background: #335b80;
-            --color-title: #ffffff;
-            --text-color: #000000;
-            --color-title-content: #05325c;
-        }
-    
-        /* HOME PAGE */
-    
-        *{
-            box-sizing: border-box;
-        }
-    
-        body{
-            margin: 0 auto;
-        }
-    
-        header, main, footer{
-            max-width: 2000px;
-            margin: 0 auto;
-        }
-    
-        h1{
-            color: #ffffff;
-            font-family: Comfortaa, sans-serif;
-            font-size: 3rem;
-            letter-spacing: 0.7rem;
-            padding-left: 10rem;
-        }
-    
-        h2, h3{
-            font-family: "Sora", sans-serif;
-            color: var(--color-title-content);
-        }
-    
-        p{
-            font-family: "Encode Sans", sans-serif;
-        }
-    
-        /* HEADER */
-    
-        header{
-            display: flex;
-            justify-content: space-evenly;
-            background-color: var(--background);
-        }
-    
-        .top-nav {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .top-nav a {
-            font-family: Comfortaa, sans-serif;
-            color: var(--color-title);
-            text-decoration: none;
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-            font-size: 1.7rem;
-            text-align: center;
-            align-content: center;
-            letter-spacing: .1rem;
-        }
-    
-        .top-nav a:hover {
-            background-color: var(--color-title);
-            color: var(--background);
-        }
-    
-        /* BUTON */
-        #menu {
-            display: none; /* hide hamburger button */
-        }
-    
-        .top-nav {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-    
-        .top-nav a {
-            display: block;
-        }
-    
-        a{
-            color: white;
-            text-decoration: none;
-            text-align: center;
-        }
-        /* BUTON */
-    
-        /* HEADER */
-    
-        /* MAIN */
-    
-        .hero{
-            position: relative;
-        }
-    
-        .description-hero{
-            max-width: 100%;
-        }
-    
-        .hero img{
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: brightness(60%);
-        }
-    
-        .announcement-title{
-            position: absolute;
-            top: 5%;
-            left: 60%;
-            right: 5%;
-            color: var(--color-title);
-            font-size: 5rem;
-            padding: 0;
-        }
-    
-        .announcement-text{
-            position: absolute;
-            color: var(--color-title);
-            width: unset;
-            top: 50%;
-            left: 60%;
-            right: 5%;
-            padding: 0;
-            font-size: 1.5rem;
-            line-height: 1.5;
-        }
-    
-        /* TOP SALES */
-    
-        .top-sales{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            text-align: center;
-            margin-top: 2.5rem;
-            box-shadow: 0 4px 8px 10px rgba(0, 0, 0, 0.1);
-        }
-    
-        .top-sales h2{
-            font-size: 3rem;
-            text-align: center;
-            grid-column: 1 / 4;
-        }
-    
-        .top-sales p {
-            font-size: 1.5rem;
-        }
-    
-        .top-sales img{
-            width: 50%;
-            height: auto;
-            margin: 0 auto;
-        }
-    
-        .top-tie,
-        .top-belt{
-            max-height: 17rem;
-        }
-    
-        .available{
-            color: var(--color-title-content);
-            font-weight: bold;
-        }
-        
-        /* TOP SALES */
-    
-        /* EXPERIENCES */
-    
-        .experiences{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: center;
-            align-items: center;
-            margin-top: 2.5rem;
-            width: 100%;
-        }
-    
-        .experiences h2{
-            font-size: 3rem;
-            text-align: center;
-            grid-column: 1/3;
-        }
-    
-        .elder-berret{
-            text-align: center;
-            margin-top: .5rem;
-            font-size: 1.5rem;
-        }
-    
-        .elder-byro-caption{
-            text-align: center;
-            margin-top: .5rem;
-            font-size: 1.5rem;
-        }
-    
-        .experiences-text, .experiences-text-2{
-            text-align: justify;
-            font-size: 1.5rem;
-            width: 70%;
-        }
-    
-        .experiences-text-2{
-            grid-column: 2/3;
-            grid-row: 3/4;
-            width: 80%;
-        }
-    
-        .elder-byro{
-            grid-row: 2/3;
-            grid-column: 2/3;
-            margin-top: 1.6rem;
-        }
-        /* EXPERIENCES */
-    
-        /* MAIN */
-    
-        /* HOME PAGE */
-    
-        /* STORE PAGE */
-    
-        .belts-block-title,
-        .shoes-block-title,
-        .ties-block-title{
-            text-align: center;
-            margin-top: 2rem;
-            font-size: 2.5rem;
-            grid-column: 1/4;
-        }
-    
-        .belts,
-        .shoes,
-        .ties{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            text-align: center;
-            margin-top: 3rem;
-        }
-    
-        .belts img,
-        .shoes img,
-        .ties img{
-            max-width: 100%;
-            height: auto;
-            padding: 1rem;
-        }
-    
-        .tie2{
-            margin-top: 2rem;
-        }
-    
-        .tie3{
-            margin-top: 2rem;
-        }
-    
-        .belts-title,
-        .shoes-title,
-        .ties-title{
-            font-size: 2rem;
-        }
-    
-        .belts-colors,
-        .shoes-colors,
-        .ties-colors,
-        .belts-price,
-        .shoes-price,
-        .ties-price{
-            font-size: 1.5rem;
-        }
-    
-        .coming-soon{
-            color: var(--color-title-content);
-            margin-top: 7rem;
-            margin-bottom: 7rem;
-            text-align: center;
-        }
-    
-        /* STORE PAGE */
-    
-        /* ABOUT US PAGE */
-    
-        .about-us-title{
-            text-align: center;
-            margin-top: 5rem;
-            font-size: 2.5rem;
-        }
-    
-        .about-us{
-            display: grid;
-            margin: 0 auto;
-            max-width: 80rem;
-            grid-template-columns: 1fr 1fr;
-            text-align: center;
-            align-items: center;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-        }
-    
-        .fidelina-baptism-photo{
-            grid-column: 2/3;
-        }
-    
-        .baptism-of-fidelina{
-            grid-column: 1/2;
-            grid-row: 2/3;
-        }
-    
-        .myself-introduction-about-us-page,
-        .baptism-of-fidelina,
-        .purpose-of-the-site{
-            padding: 3rem;
-            text-align: justify;
-        }
-    
-        /* ABOUT US PAGE */
-    
-        /* CONTACT US PAGE */
-    
-        .owners{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            margin-top: 3rem;
-            text-align: center;
-        }
-    
-        .owners h2{
-            text-align: center;
-            color: var(--color-title-content);
-            grid-column: 1/3;
-            font-size: 2rem;
-        }
-    
-        .owners figure{
-            margin: 0 auto;
-            margin-bottom: 5rem;
-        }
-    
-        .owners figcaption{
-            display: block;
-            margin-top: .5rem;
-            font-family: "Encode Sans", sans-serif;
-            font-size: 1.5rem;
-        }
-    
-        .visit-us{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            align-items: center;
-            justify-content: center;
-            justify-items: center;
-        }
-    
-        .visit-us h2{
-            color: var(--color-title-content);
-            font-size: 2rem;
-            grid-column: 1/3;
-        }
-    
-        .adress {
-            font-style: normal;
-            color: black;
-            line-height: 2.5rem;
-            font-family: "Encode Sans", sans-serif;
-            font-size: 1.5rem;
-        }
-    
-        .adress a[href^="mailto:"],
-        .adress a[href^="tel:"] {
-            text-decoration: none;
-            color: var(--color-title-content)
-        }
-    
-        .let-us-know-your-opinion{
-            margin-top: 4rem;
-        }
-    
-        .let-us-know-your-opinion h2{
-            text-align: center;
-            color: var(--color-title-content);
-        }
-    
-        .form{
-            border: solid 4px var(--form-background-color);
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-    
-        .essential-form{
-            padding: 1rem;
-            font-size: 1.2rem;
-            width: 60%;
-            margin: 0 auto;
-            background-color: rgb(128, 128, 128, 0.1);
-            font-family: Comfortaa, sans-serif;
-        }
-    
-        .essential-form select,
-        .essential-form [type="date"],
-        .essential-form [type="text"],
-        textarea {
-            display: block;
-            width: 100%;
-            height: 2.5rem;
-            font-size: 1rem;
-            box-sizing: border-box;
-            margin-bottom: 1rem;
-        }
-    
-        .essential-form input:required:invalid,
-        .essential-form select:required:invalid,
-        .essential-form input[type="date"]:required:invalid {
-            border-right: solid 3px red;
-        }
-    
-        .essential-form input:required,
-        .essential-form select:required:invalid,
-        .essential-form input[type="date"]:required:valid {
-            border-right: solid 3px green;
-        }
-    
-        .essential-form input[type="submit"]{
-            border: none;
-            background-image: linear-gradient(var(--color-title-content), rgb(11, 59, 122));
-            color: white;
-            border-radius: 6px;
-            padding: .8rem;
-            width: 100%;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            box-shadow: 1px 1px 4px #3b3b3b;
-            font-size: 1.5rem;
-        }
-    
-        .form-reviewed{
-            font-family: Comfortaa, sans-serif;
-            font-size: 2rem;
-            color: var(--color-title-content);
-            text-align: center;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-        }
-    
-        .stars{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-around;
-            align-items: center;
-            padding: 3rem;
-            max-height: 1rem;
-        }
-    
-        input[type="radio"] {
-            display: none;
-            position: relative;
-            caret-color: rgba(0, 0, 0, 0);
-        }
-    
-        .stars > label {
-            color: var(--color-title-content);
-            width: 30px;
-            height: 30px;
-            font-size: 2rem;
-            display: flex;
-            align-items: center;
-            caret-color: rgba(0, 0, 0, 0);
-        }
-    
-        .stars > label:hover {
-            color: var(--color-title);
-        }
-    
-        .stars > label::before {
-            content: "\2606";
-    
-        }
-    
-        .stars input:checked ~ label::before {
-            content: "\2605";
-    
-        }
-    
-        .required{
-            color: var(--form-background-color);
-        }
-     
-        .review{
-            font-size: 2rem;
-            color: var(--form-background-color);
-            text-align: center;
-        }
-    
-        /* CONTACT US PAGE */
-    
-        /* FOOTER */
-    
-        footer{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            font-family: Comfortaa, sans-serif;
-            justify-items: center;
-            align-items: center;
-            min-height: 6rem;
-            margin-top: 2.5rem;
-            background-color: var(--background);
-            color: var(--color-title);
-        }
-    
-        footer p {
-            font-size: 1.5rem;
-        }
-    
-        .sociallinks a{
-            grid-column: 2/3;
-            align-content: center;
-            justify-content: center;
-        }
-    
-        .sociallinks img{
-            margin-top: .8rem;
-            margin-right: 1rem;
-            margin-left: 1rem;
-        }
-    
-        .weather-logo{
-            position: absolute;
-            top: 3.8%;
-            right: 95%;
-        }
-    
-        .weather-information{
-            position: absolute;
-            color: var(--color-title);
-            top: 3%;
-            left: 4%;
-        }
-    
-        .windchill{
-            position: absolute;
-            color: var(--color-title);
-            top: 6%;
-            left: 4%;
-        }
-        /* FOOTER */
 }
