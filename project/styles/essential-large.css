@@ -286,6 +286,12 @@
         padding: 1rem;
     }
 
+    .second-belt,
+    .third-belt{
+        width: 19rem;
+        height: auto;
+    }
+
     .tie2{
         margin-top: 2rem;
     }
@@ -351,6 +357,8 @@
     .purpose-of-the-site{
         padding: 3rem;
         text-align: justify;
+        font-size: 1.2rem;
+        line-height: 1.3;
     }
 
     /* ABOUT US PAGE */
